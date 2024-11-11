@@ -119,6 +119,75 @@ func main()  {
 			fmt.Println(i)
 
 // operasi perbandingan
+		// <
+		// >
+		// <=
+		// >=
+		// ==
+		// !=
+
+			// coba
+				var name1 string = "Oktavari"
+				var name2 = "Budi Arief"
+				name3 := "jujung"
+
+				var result1 = name1 == name2 || name1 != name3
+
+				fmt.Println(result1)
+
+//  operasi boolean
+		// && = and
+		// || = or
+		// ! = not
+
+			// coba
+				var nilaiAkhir = 90
+				var nilaiAbsen = 80
+
+				var lulusAkhir bool = nilaiAkhir > 80
+				var lulusAbsen bool = nilaiAbsen > 80
+
+				var lulus = lulusAkhir && lulusAbsen
+
+				fmt.Println(lulus)
+
+// array
+	// coba
+		var hewan [3]string
 		
+		hewan[0] = "Kucing"
+		hewan[1] = "Anjing"
+		hewan[2] = "Kelinci"
+
+		fmt.Println(hewan[0])
+		fmt.Println(hewan[1])
+		fmt.Println(hewan[2])
+
+			// array langsung
+				var nomor = [3]int{
+					1,
+					2,
+					3,
+				}
+
+				fmt.Println(nomor)
+
+					// function array
+						// len(array) = panjang array
+						// array[index] = ambil data array
+						// array[index] = value = ubah data array
+
+							// coba
+							var value = [...]int{ // [...] =  artinya tidak menentukan secara eksplisit panjang data arraynya
+								1,
+								2,
+								3,
+							}
+			
+							fmt.Println(len(value))
+							fmt.Println(value[0])
+							value[0] = 50
+							fmt.Println(value[0])
+
 }
 
