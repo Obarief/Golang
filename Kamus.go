@@ -189,5 +189,53 @@ func main()  {
 							value[0] = 50
 							fmt.Println(value[0])
 
-}
+// tipe data slice (sering dipakai)
+	// potongan dari array 
+			// pointer (penunjuk data pertama)
+			// length (panjang data)
+			// capasity (dari pointer sampai akhir data)
+							// contoh 
+								// array[low:high] index awal sampai index akhir
+
+									// coba
+										mhs := [...]string{"okta", "budi", "arief", "jujung"}
+										slice := mhs[1:4]
+
+										fmt.Println(slice[0]) // ketika di print slicenya maka akan menampilkan data awal dari si slice bukan dari array keseluruhannya 
+
+											// penjelasan
+												// var array [3]string = ditentukan panjang datanya
+												// var slice []string = tidak ditentukan panjang datanya
+
+													// function dalam slice
+														// len(slice) = panjang slice
+															fmt.Println(len(slice))
+
+														// cap(slice) = kapasitas slice
+															fmt.Println(cap(slice))
+
+														// append(slice, data) = menambah data ke slice di akhir
+															slice = append(slice, "pipin")
+															fmt.Println(slice)
+															fmt.Println(mhs)
+												// catatan: jika menggunakan append dan bila kapasitas array awal sudah habis maka akan dibuat array baru, namun bisa juga inisialisasi nama slice baru jika tidak ingin slice lama berubah
+
+														// make([]string, 2, 5)
+															// penjelasan
+																// membuat slice namun arraynya otomatis dibuatkan
+																	// panjang 2 = datanya ada 2
+																	// kapasitasnya 5 = maka slicenya jika di append tidak membuat array baru
+
+																		// coba
+																			var newSlice = make([]string, 2, 5)
+																			newSlice[0] = "icip"
+																			newSlice[1] = "ucup"
+
+																			fmt.Println(newSlice)
+																			fmt.Println(len(newSlice))
+																			fmt.Println(cap(newSlice))
+
+																			newSlice = append(newSlice, "acap", "ocop", "ecep", "scsp", "lclp")
+																			fmt.Println(newSlice)
+}															
 
