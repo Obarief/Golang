@@ -1,0 +1,12 @@
+go mod init = inisialisasi folder projek
+go run = menjalankan program golang
+go test = untuk testing program dengan file berakhiran (<...>_test.go)
+go build = untuk mekompilasi exe dan menjalankanya
+go get = untuk install package
+go mod download = download package
+go mod tidy = memvalidasi dependensi sekaligus mendownloadnya
+
+
+fmt.Print = print biasa
+fmt.Println = print baris baru
+fmt.Printf = print melakukan pemformatan tipe data primitive lainnya
